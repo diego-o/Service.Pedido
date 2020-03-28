@@ -8,7 +8,8 @@ create table Cliente (
 	Numero varchar(20) not null,
 	Bairro varchar(100) not null,
 	Cidade varchar(60) not null,
-	Uf varchar(2) not null
+	Uf varchar(2) not null,
+	Senha varchar(max)
   constraint pk_cliente primary key(Id)
 )
 go
