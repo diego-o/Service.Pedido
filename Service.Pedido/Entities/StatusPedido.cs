@@ -1,11 +1,9 @@
 ﻿
 namespace Service.Pedido.Entities
 {
-    public enum StatusPedido
+    public class StatusPedido
     {
-        Solicitado = 1,
-        EmEntrega = 2,
-        Entregue = 3,
-        Cancelado = 4
+        public int Id { get; set; }
+        public string Descricao { get; set; }
     }
 }
