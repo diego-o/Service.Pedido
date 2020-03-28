@@ -5,6 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json.Serialization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Service.Pedido.Injection;
 
 namespace Service.Pedido
 {
@@ -43,6 +44,8 @@ namespace Service.Pedido
             {
                 options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
+
+            services.ConfigInjection();
 
             services.AddControllers();
         }
